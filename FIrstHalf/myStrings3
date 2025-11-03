@@ -1,0 +1,68 @@
+/*
+Brendan BrendanLauterborn
+*/
+
+class myStrings3 {
+  public static void main(String[] args) {
+    String fName = "Brendan";
+    String lName = "Lauterborn";
+    String yName = "brendan";
+
+    System.out.println(fName +" " + lName );
+
+    String wName = fName + " " + lName;
+    System.out.println(wName);
+
+    String iName = fName.substring(0,1) + lName;
+    System.out.println(iName);
+
+    String initials = fName.substring(0,1) + lName.substring(0,1);
+    System.out.println(initials);
+
+    System.out.println(wName.length());
+
+    System.out.println(fName.equalsIgnoreCase(yName));
+    System.out.println(fName.contains("Bren"));
+    System.out.println(fName.charAt(3));
+    System.out.println(fName.indexOf('e'));
+    System.out.println(fName.replace('e','a'));
+    //fName = fName.replace('e','a');
+    System.out.println(fName);
+
+    int miles = 124;
+    String answer = String.format("My longest single day bike ride is %d miles.", miles);
+    System.out.println(answer);
+
+    if (miles > 100) {
+      System.out.println("This is true.");
+
+    }//end if
+    if (false) {
+      System.out.println("This is the 2nd true.");
+    } else {
+      System.out.println("This is false.");
+    }
+    if (false) {
+      System.out.println("This is the 3rd true.");
+    } else if (true) {
+      System.out.println("This is the 4th true.");
+    }//end if
+    miles = 14;
+    switch (miles) {
+      case 10:
+        System.out.println("That isn't very far.");
+        break;
+      case 124:
+        System.out.println("That is far.");
+        break;
+      default:
+        System.out.println("That's a good distance.");
+  }
+  int i = 100;
+  int j = 20;
+
+  System.out.println("You will get " + i/j + " twenties.");
+  System.out.println("You will get " + i%j + "oether money.");
+  }//end main
+
+}//end class
